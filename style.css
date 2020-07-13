@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .title {
+  font-family: "PT Serif", serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+}
+
+.header .info {
+  width: 100%;
+  max-width: 410px;
+}
+
+.header .info strong {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.header .info p {
+  font-size: 18px;
+  line-height: 27px;
+  padding-top: 10px;
+}
+
+.team {
+  width: 100%;
+  padding-top: 96px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, 238px);
+  justify-content: space-between;
+}
+
+.team li {
+  width: 238px;
+  height: 460px;
+  position: relative;
+}
+
+.team li span {
+  width: 100%;
+  position: absolute;
+  top: 111px;
+  right: -127px;
+  transform: rotate(90deg);
+  font-family: PT Serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.team .center-item {
+  display: flex;
+  align-items: flex-end;
+}
+
+.team .center-item span {
+  top: 195px;
+}
+
+.team li figure figcaption {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  box-sizing: border-box;
+}
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #a9a9a9;
+  text-align: center;
+  padding: 2rem;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 4rem 0.5rem;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .header .title {
+    margin-bottom: 38px;
+  }
+  .team {
+    grid-template-columns: repeat(2, 138.35px);
+    justify-content: space-around;
+  }
+
+  .team li {
+    width: 138.35px;
+    height: 300px;
+  }
+
+  .team li span {
+    right: -80px;
+    top: 62px;
+  }
+
+  .team .center-item {
+    align-items: initial;
+  }
+
+  .team li:nth-child(2n) {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .team :nth-child(2n) span {
+    top: 130px;
+  }
+}
